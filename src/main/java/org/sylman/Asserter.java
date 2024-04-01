@@ -1,6 +1,6 @@
 package org.sylman;
 
-// TODO: 4/1/2024  //использую этот класс, поскольку не стала использовать JSON вывод результата
+// TODO: 4/1/2024  //небольшая попытка реализации задания со звездочкой
 class Asserter {
     static void assertEquals(int expected, int actual) {
         if (expected != actual) {
