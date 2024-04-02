@@ -1,4 +1,4 @@
-package org.sylman;
+package org.sylman.seminar2;
 
 // TODO: 4/1/2024  //небольшая попытка реализации задания со звездочкой
 class Asserter {

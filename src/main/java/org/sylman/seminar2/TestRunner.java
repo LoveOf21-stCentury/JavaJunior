@@ -1,6 +1,4 @@
-package org.sylman;
-
-import org.sylman.myAnnotations.*;
+package org.sylman.seminar2;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -19,19 +17,19 @@ public class TestRunner {
         List<Method> afterAllMethods = new ArrayList<>();
 
         for (Method method : testClass.getDeclaredMethods()) {
-            if (method.isAnnotationPresent(Test.class)) {
+            if (method.isAnnotationPresent(org.sylman.myAnnotations.Test.class)) {
                 testMethods.add(method);
             }
-            if (method.isAnnotationPresent(BeforeAll.class)) {
+            if (method.isAnnotationPresent(org.sylman.myAnnotations.BeforeAll.class)) {
                 beforeAllMethods.add(method);
             }
-            if (method.isAnnotationPresent(BeforeEach.class)) {
+            if (method.isAnnotationPresent(org.sylman.myAnnotations.BeforeEach.class)) {
                 beforeEachMethods.add(method);
             }
-            if (method.isAnnotationPresent(AfterEach.class)) {
+            if (method.isAnnotationPresent(org.sylman.myAnnotations.AfterEach.class)) {
                 afterEachMethods.add(method);
             }
-            if (method.isAnnotationPresent(AfterAll.class)) {
+            if (method.isAnnotationPresent(org.sylman.myAnnotations.AfterAll.class)) {
                 afterAllMethods.add(method);
             }
         }
