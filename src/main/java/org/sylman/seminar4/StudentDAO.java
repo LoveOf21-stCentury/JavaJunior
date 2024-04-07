@@ -1,2 +1,4 @@
-package org.sylman.seminar4;public class StudentDAO {
+package org.sylman.seminar4;
+
+public class StudentDAO {
 }
