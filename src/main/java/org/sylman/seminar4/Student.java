@@ -1,12 +1,12 @@
 package org.sylman.seminar4;
 
-public class Students {
+public class Student {
     private int id;
     private String firstName;
     private String secondName;
     private int age;
 
-    public Students(int id, String firstName, String secondName, int age) {
+    public Student(int id, String firstName, String secondName, int age) {
         this.id = id;
         this.firstName = firstName;
         this.secondName = secondName;
