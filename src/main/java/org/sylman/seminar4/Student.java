@@ -1,5 +1,6 @@
 package org.sylman.seminar4;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
@@ -10,8 +11,11 @@ import jakarta.persistence.Table;
 public class Student {
     @Id
     private int id;
+    @Column(name = "firstName")
     private String firstName;
+    @Column(name = "secondName")
     private String secondName;
+    @Column(name = "age")
     private int age;
 
     public Student(int id, String firstName, String secondName, int age) {
@@ -55,5 +59,15 @@ public class Student {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", secondName='" + secondName + '\'' +
+                ", age=" + age +
+                '}';
     }
 }
